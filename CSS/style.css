@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(https://dthezntil550i.cloudfront.net/p3/latest/p31905041520523470009335205/a26b3766-2d81-4398-9889-18259c4b00c4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+}
+
+.f16 {
+    width: 26%;
+    position: absolute;
+    top: 5px;
+    right: -25%;
+    animation: f16 10s linear 2s 1;
+}
+
+.t72 {
+    width: 22%;
+    position: absolute;
+    bottom: -45px;
+    right: -25%;
+    animation: t72 7s linear 2s 1;
+}
+
+.rocket {
+    width: 5%;
+    position: absolute;
+    top: 70px;
+    right: -25%;
+    animation: rocket 11s linear 2s 1;
+}
+
+.bomb{
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    animation: bomb 11s linear 8s 1;
+}
+
+@keyframes bomb {
+    0%  { left:-10%; bottom:-15%; opacity: 0; }
+    5%{ left:5px; bottom: 0px; opacity: 1; }
+    0%  { left:-10%; bottom:-15%; opacity: 0; }
+}
+
+@keyframes rocket {
+    0%   { right:-25%; top:200px;}
+    25%  { right:25%; top:400px;}
+    50%  { right:75%; top:600px; transform: rotate(-30deg); }
+    75%  { right:125%; top:800px; opacity: 0;}
+    100% { right:175%; top:100%; opacity: 0;}
+
+}
+
+@keyframes t72 {
+    from {
+        right: -25%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes f16 {
+    from {
+        right: -25%;
+    }
+
+    to {
+        right: 100%;
+        transform: rotate(15deg);
+        top: -25%;
+    }
+}
